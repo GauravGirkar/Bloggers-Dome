@@ -1,42 +1,53 @@
 import { createContext, useContext, useState, useEffect } from 'react'
 
-// 1. Create the context
 const AuthContext = createContext()
 
-// 2. Provider component — wraps your entire app
-export function AuthProvider({ children }) {
-    const [user, setUser] = useState(null)
-    const [token, setToken] = useState(null)
+function decodeToken(token) {
+    try {
+        const base64Url = token.split('.')[1]
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/')
+        const jsonPayload = decodeURIComponent(
+            atob(base64).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join('')
+        )
+        return JSON.parse(jsonPayload)
+    } catch {
+        return null
+    }
+}
 
-    // On app load — check if token exists in localStorage
+export function AuthProvider({ children }) {
+    const [token, setToken] = useState(null)
+    const [userId, setUserId] = useState(null)
+
     useEffect(() => {
         const savedToken = localStorage.getItem('token')
-        if(savedToken){
+        if (savedToken) {
             setToken(savedToken)
+            const decoded = decodeToken(savedToken)
+            if (decoded) setUserId(decoded.id)
         }
     }, [])
 
-    // Login function — saves token to state and localStorage
     function login(tokenReceived) {
         localStorage.setItem('token', tokenReceived)
         setToken(tokenReceived)
+        const decoded = decodeToken(tokenReceived)
+        if (decoded) setUserId(decoded.id)
     }
 
-    // Logout function — clears everything
     function logout() {
         localStorage.removeItem('token')
         setToken(null)
-        setUser(null)
+        setUserId(null)
     }
 
     return (
-        <AuthContext.Provider value={{ user, token, login, logout }}>
+        <AuthContext.Provider value={{ token, userId, login, logout }}>
             {children}
         </AuthContext.Provider>
     )
 }
 
-// 3. Custom hook — makes it easy to use auth anywhere
 export function useAuth() {
     return useContext(AuthContext)
 }
