@@ -220,6 +220,13 @@ FRONTEND_URL=http://localhost:3000
 
 # File Upload
 MAX_FILE_SIZE=5242880  # 5MB in bytes
+
+# Rate Limiting (Optional - defaults are set in code)
+# RATE_LIMIT_AUTH_MAX=5          # Auth requests per window
+# RATE_LIMIT_WRITE_MAX=20        # Write operations per window
+# RATE_LIMIT_READ_MAX=200        # Read operations per window
+# RATE_LIMIT_UPLOAD_MAX=10       # Upload operations per hour
+# RATE_LIMIT_WINDOW_MS=900000    # 15 minutes in milliseconds
 ```
 
 ### Frontend (.env.local)
@@ -297,9 +304,16 @@ curl -X POST http://localhost:5000/api/posts \
 - **Password Hashing**: bcryptjs with salting
 - **JWT Authentication**: Secure token-based auth with 24-hour expiry
 - **CORS Protection**: Configured for specific frontend origins
-- **File Validation**: Image file type and size restrictions
+- **File Validation**: Image file type and size restrictions (5MB limit)
 - **Protected Routes**: Middleware checks auth before accessing sensitive endpoints
 - **HTTP Headers**: CORS headers prevent unauthorized cross-origin requests
+- **Rate Limiting**: Multi-tier rate limiting to prevent abuse:
+  - **General API**: 100 requests per 15 minutes
+  - **Authentication**: 5 attempts per 15 minutes (prevents brute force)
+  - **Write Operations**: 20 operations per 15 minutes (create/update/delete)
+  - **Read Operations**: 200 requests per 15 minutes
+  - **File Uploads**: 10 uploads per hour
+- **Request Throttling**: Automatic request throttling with retry-after headers
 
 ---
 
@@ -343,6 +357,15 @@ npm run lint    # Run ESLint
 ### **JWT token expired**
 - Re-login to get a new token
 - Token lifespan can be configured in auth routes
+
+### **Rate limit exceeded**
+- Check the response headers for `Retry-After` value
+- Rate limits vary by endpoint type:
+  - Auth endpoints: 5 requests per 15 minutes
+  - Write operations: 20 requests per 15 minutes
+  - Read operations: 200 requests per 15 minutes
+  - File uploads: 10 requests per hour
+- Rate limiting is disabled for successful requests in development mode
 
 ---
 
