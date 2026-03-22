@@ -112,7 +112,7 @@ bloggers-dome-website/
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/bloggers-dome-website.git
+git clone https://github.com/GauravGirkar/bloggers-dome-website.git
 cd bloggers-dome-website
 ```
 
@@ -367,8 +367,8 @@ This project is licensed under the ISC License - see the package.json for detail
 ## 📞 Support
 
 For issues, questions, or suggestions:
-- **GitHub Issues**: [Open an issue](https://github.com/yourusername/bloggers-dome-website/issues)
-- **Email**: your-email@example.com
+- **GitHub Issues**: [Open an issue](https://github.com/GauravGirkar/bloggers-dome-website/issues)
+- **Email**: gauravgirkar194@gmail.com
 
 ---
 
