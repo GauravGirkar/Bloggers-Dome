@@ -37,6 +37,15 @@ function SearchIcon() {
     )
 }
 
+/* ─── Mood Config ──────────────────────────────────────── */
+const MOOD_OPTIONS = [
+    { id: 'Uplifting',  label: 'Uplifting',  emoji: '☀️', color: '#f6ad55' },
+    { id: 'Thoughtful', label: 'Thoughtful', emoji: '💭', color: '#a888ff' },
+    { id: 'Neutral',    label: 'Neutral',    emoji: '⚖️', color: '#8a8a9a' },
+    { id: 'Raw',        label: 'Raw',        emoji: '🌊', color: '#63b3ed' },
+    { id: 'Fiery',      label: 'Fiery',      emoji: '🔥', color: '#f56565' },
+]
+
 const SORT_OPTIONS = [
     { id: 'newest',   label: 'Newest' },
     { id: 'oldest',   label: 'Oldest' },
@@ -49,11 +58,23 @@ export default function Home() {
     const [error, setError] = useState('')
     const [query, setQuery] = useState('')
     const [sort, setSort] = useState('newest')
+    const [activeMood, setActiveMood] = useState('')
+    const [currentPage, setCurrentPage] = useState(1)
+    
+    const POSTS_PER_PAGE = 9
+
+    // Reset to page 1 whenever filters change
+    useEffect(() => {
+        setCurrentPage(1)
+    }, [query, sort, activeMood])
 
     useEffect(() => {
         async function fetchPosts() {
             try {
-                const res = await fetch('/api/posts/')
+                const url = activeMood
+                    ? `/api/posts/?mood=${encodeURIComponent(activeMood)}`
+                    : '/api/posts/'
+                const res = await fetch(url)
                 if (!res.ok) throw new Error('Failed to fetch')
                 const data = await res.json()
                 setPosts(data.postFetched || [])
@@ -64,7 +85,12 @@ export default function Home() {
             }
         }
         fetchPosts()
-    }, [])
+    }, [activeMood])
+
+    function handleMoodFilter(moodId) {
+        setLoading(true)
+        setActiveMood(prev => prev === moodId ? '' : moodId)
+    }
 
     const filteredPosts = useMemo(() => {
         let list = [...posts]
@@ -81,6 +107,18 @@ export default function Home() {
         if (sort === 'mostLiked') list.sort((a, b) => (b.likes?.length ?? 0) - (a.likes?.length ?? 0))
         return list
     }, [posts, query, sort])
+
+    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
+    
+    const paginatedPosts = useMemo(() => {
+        const startIndex = (currentPage - 1) * POSTS_PER_PAGE
+        return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE)
+    }, [filteredPosts, currentPage])
+
+    /* helper: get mood config */
+    function getMoodConfig(mood) {
+        return MOOD_OPTIONS.find(m => m.id === mood) || MOOD_OPTIONS[2] // fallback to Neutral
+    }
 
     return (
         <main className="main-content container page-enter">
@@ -107,6 +145,26 @@ export default function Home() {
                             onChange={e => setQuery(e.target.value)}
                             aria-label="Search posts"
                         />
+                    </div>
+
+                    {/* Mood filter chips */}
+                    <div className="filter-pills" style={{ marginBottom: '0.75rem' }}>
+                        {MOOD_OPTIONS.map(mood => (
+                            <button
+                                key={mood.id}
+                                className={`filter-pill mood-chip${activeMood === mood.id ? ' active' : ''}`}
+                                onClick={() => handleMoodFilter(mood.id)}
+                                style={activeMood === mood.id ? {
+                                    background: `${mood.color}18`,
+                                    borderColor: `${mood.color}60`,
+                                    color: mood.color,
+                                } : {}}
+                                aria-label={`Filter by ${mood.label} mood`}
+                            >
+                                <span className="mood-chip-emoji">{mood.emoji}</span>
+                                {mood.label}
+                            </button>
+                        ))}
                     </div>
 
                     {/* Sort pills */}
@@ -144,12 +202,19 @@ export default function Home() {
                     <p>{error}</p>
                     <button className="btn btn-outline" onClick={() => window.location.reload()}>Retry</button>
                 </div>
-            ) : posts.length === 0 ? (
+            ) : posts.length === 0 && !activeMood ? (
                 <div className="empty-state">
                     <span className="empty-state-icon">✍️</span>
                     <h3>It's quiet here</h3>
                     <p>Be the first to share your thoughts with the community.</p>
                     <Link to="/create-post" className="btn btn-primary">Start Writing</Link>
+                </div>
+            ) : posts.length === 0 && activeMood ? (
+                <div className="empty-state">
+                    <span className="empty-state-icon">{getMoodConfig(activeMood).emoji}</span>
+                    <h3>No {activeMood.toLowerCase()} posts yet</h3>
+                    <p>Try a different mood or clear the filter.</p>
+                    <button className="btn btn-outline" onClick={() => { setLoading(true); setActiveMood('') }}>Clear Filter</button>
                 </div>
             ) : filteredPosts.length === 0 ? (
                 <div className="empty-state">
@@ -167,36 +232,85 @@ export default function Home() {
                         </p>
                     )}
                     <div className="grid">
-                        {filteredPosts.map((post) => (
-                            <Link to={`/post/${post._id}`} key={post._id} style={{ textDecoration: 'none' }}>
-                                <article className="glass-card post-card">
-                                    {post.image && (
-                                        <div className="post-card-img">
-                                            <img src={post.image} alt={post.title} loading="lazy" />
+                        {paginatedPosts.map((post) => {
+                            const moodCfg = getMoodConfig(post.mood)
+                            return (
+                                <Link to={`/post/${post._id}`} key={post._id} style={{ textDecoration: 'none' }}>
+                                    <article className="glass-card post-card">
+                                        {post.image && (
+                                            <div className="post-card-img">
+                                                <img src={post.image} alt={post.title} loading="lazy" />
+                                            </div>
+                                        )}
+                                        <div className="post-card-meta">
+                                            <span className="post-card-author">@{post.author?.username || 'unknown'}</span>
+                                            <div className="post-card-tags">
+                                                {/* Mood badge */}
+                                                {post.mood && (
+                                                    <span
+                                                        className="mood-badge"
+                                                        style={{
+                                                            background: `${moodCfg.color}18`,
+                                                            color: moodCfg.color,
+                                                            borderColor: `${moodCfg.color}35`,
+                                                        }}
+                                                    >
+                                                        {moodCfg.emoji} {moodCfg.label}
+                                                    </span>
+                                                )}
+                                                <span className="post-card-tag">Article</span>
+                                            </div>
                                         </div>
-                                    )}
-                                    <div className="post-card-meta">
-                                        <span className="post-card-author">@{post.author?.username || 'unknown'}</span>
-                                        <span className="post-card-tag">Article</span>
-                                    </div>
-                                    <h2 className="post-card-title">{post.title}</h2>
-                                    <p className="post-card-excerpt">
-                                        {post.content
-                                            ? (post.content.length > 130 ? post.content.substring(0, 130) + '…' : post.content)
-                                            : 'No preview available.'}
-                                    </p>
-                                    <div className="post-card-footer">
-                                        <div className="post-card-stats">
-                                            <span className="post-stat"><HeartIcon />{post.likes?.length ?? 0}</span>
-                                            <span className="post-stat"><ChatIcon />comments</span>
-                                            <span className="post-stat read-time"><ClockIcon />{readingTime(post.content)} min</span>
+                                        <h2 className="post-card-title">{post.title}</h2>
+                                        <p className="post-card-excerpt">
+                                            {post.summary
+                                                ? post.summary
+                                                : post.content
+                                                    ? (post.content.length > 130 ? post.content.substring(0, 130) + '…' : post.content)
+                                                    : 'No preview available.'}
+                                        </p>
+                                        <div className="post-card-footer">
+                                            <div className="post-card-stats">
+                                                <span className="post-stat"><HeartIcon />{post.likes?.length ?? 0}</span>
+                                                <span className="post-stat"><ChatIcon />comments</span>
+                                                <span className="post-stat read-time"><ClockIcon />{readingTime(post.content)} min</span>
+                                            </div>
+                                            <span>{new Date(post.createdAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                                         </div>
-                                        <span>{new Date(post.createdAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-                                    </div>
-                                </article>
-                            </Link>
-                        ))}
+                                    </article>
+                                </Link>
+                            )
+                        })}
                     </div>
+                    
+                    {/* Pagination Controls */}
+                    {totalPages > 1 && (
+                        <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '3.5rem' }}>
+                            <button 
+                                className="btn btn-outline" 
+                                disabled={currentPage === 1}
+                                onClick={() => {
+                                    setCurrentPage(p => p - 1)
+                                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                                }}
+                            >
+                                ← Previous
+                            </button>
+                            <span style={{ display: 'flex', alignItems: 'center', fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                                Page {currentPage} of {totalPages}
+                            </span>
+                            <button 
+                                className="btn btn-outline" 
+                                disabled={currentPage === totalPages}
+                                onClick={() => {
+                                    setCurrentPage(p => p + 1)
+                                    window.scrollTo({ top: 0, behavior: 'smooth' })
+                                }}
+                            >
+                                Next →
+                            </button>
+                        </div>
+                    )}
                 </>
             )}
         </main>

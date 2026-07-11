@@ -601,6 +601,38 @@ select.form-control option { background: var(--bg-2); }
   font-family: var(--font-mono);
   border: 1px solid rgba(123,95,245,0.2);
 }
+.post-card-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* ─── Mood Badge (on cards) ──────────────────────────────────────── */
+.mood-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.3px;
+  border: 1px solid;
+  white-space: nowrap;
+  transition: all 0.2s var(--ease);
+}
+
+/* ─── Mood Filter Chips ──────────────────────────────────────────── */
+.mood-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.mood-chip-emoji {
+  font-size: 0.82rem;
+  line-height: 1;
+}
 .post-card-title {
   font-size: 1.38rem;
   margin-bottom: 0.6rem;

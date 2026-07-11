@@ -1,0 +1,2004 @@
+[
+  {
+    "title": "A Quick Comparison of BEST Bus and Suburban Rail for Daily Commutes",
+    "content": "Rail is generally faster for longer distances but has fixed corridors, while BEST buses offer more route flexibility at the cost of being more susceptible to road traffic delays. Many commuters combine both depending on time of day and specific origin-destination pairs.",
+    "author": "Priya Nair",
+    "mood": "neutral",
+    "sentimentScore": -0.22,
+    "sentimentComparative": -0.0052,
+    "tags": [
+      "monsoon",
+      "mumbai",
+      "tech",
+      "family"
+    ],
+    "likes": 148,
+    "createdAt": {
+      "$date": "2026-05-19T12:43:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-19T12:43:00Z"
+    }
+  },
+  {
+    "title": "What Docker Containers Actually Isolate at the OS Level",
+    "content": "Containers use Linux namespaces and cgroups to isolate process trees, network interfaces, and resource usage from the host system, while sharing the host's kernel — differentiating them from full virtual machines which virtualize hardware.",
+    "author": "Kabir Malhotra",
+    "mood": "neutral",
+    "sentimentScore": 0.13,
+    "sentimentComparative": 0.0038,
+    "tags": [
+      "growth",
+      "opinion",
+      "food"
+    ],
+    "likes": 167,
+    "createdAt": {
+      "$date": "2025-12-09T22:44:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-09T22:44:00Z"
+    }
+  },
+  {
+    "title": "What It's Actually Like to Fake Confidence in Every Interview",
+    "content": "I walk in smiling, sit up straight, say all the right things about my projects. Then I walk out and sit in my scooter seat for a few minutes before I can trust myself to drive home.",
+    "author": "Simran Kaur",
+    "mood": "raw",
+    "sentimentScore": -2.16,
+    "sentimentComparative": -0.0584,
+    "tags": [
+      "placements",
+      "networking",
+      "family"
+    ],
+    "likes": 206,
+    "createdAt": {
+      "$date": "2026-04-24T22:09:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-24T22:09:00Z"
+    }
+  },
+  {
+    "title": "The Placement Cell Pushing Companies With Terrible Reviews Is Infuriating",
+    "content": "They advertise 'exciting opportunities' for firms with one-star Glassdoor reviews and delayed salary complaints all over Reddit. A five-minute search would've caught this. Nobody bothered.",
+    "author": "Zoya Sheikh",
+    "mood": "fiery",
+    "sentimentScore": -5.83,
+    "sentimentComparative": -0.2332,
+    "tags": [
+      "coding",
+      "career",
+      "food",
+      "tech"
+    ],
+    "likes": 195,
+    "createdAt": {
+      "$date": "2025-09-28T04:09:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T04:09:00Z"
+    }
+  },
+  {
+    "title": "The Quiet Difference Between Being Busy and Being Productive",
+    "content": "I filled my calendar for weeks and still felt like I hadn't moved forward. Turns out motion isn't the same as progress. Slowing down to ask what actually needs doing, instead of what merely feels urgent, changed more than any productivity app ever did.",
+    "author": "Tara Bhosale",
+    "mood": "thoughtful",
+    "sentimentScore": 1.45,
+    "sentimentComparative": 0.033,
+    "tags": [
+      "tech",
+      "travel"
+    ],
+    "likes": 108,
+    "createdAt": {
+      "$date": "2026-05-01T13:12:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-01T13:12:00Z"
+    }
+  },
+  {
+    "title": "The Days When Even Coffee Doesn't Help Me Focus",
+    "content": "I've rewritten the same paragraph of my cover letter four times, not because it's bad, but because my brain keeps drifting to every worst-case scenario about placements instead.",
+    "author": "Dev Patel",
+    "mood": "raw",
+    "sentimentScore": -2.47,
+    "sentimentComparative": -0.0882,
+    "tags": [
+      "opinion",
+      "monsoon",
+      "mumbai",
+      "growth"
+    ],
+    "likes": 46,
+    "createdAt": {
+      "$date": "2026-01-03T14:36:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-03T14:36:00Z"
+    }
+  },
+  {
+    "title": "How Rate Limiting Middleware Works in Express.js",
+    "content": "Rate limiting middleware tracks request counts per client, typically by IP address, within a defined time window, and rejects requests exceeding the threshold. Libraries like express-rate-limit make this straightforward to implement with configurable window size and max request count.",
+    "author": "Rohan Deshmukh",
+    "mood": "neutral",
+    "sentimentScore": 0.32,
+    "sentimentComparative": 0.0082,
+    "tags": [
+      "reflection",
+      "opinion",
+      "monsoon",
+      "family"
+    ],
+    "likes": 197,
+    "createdAt": {
+      "$date": "2025-12-26T07:01:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-26T07:01:00Z"
+    }
+  },
+  {
+    "title": "How Chrome Extension Manifest V3 Handles Permissions",
+    "content": "Manifest V3 requires explicit declaration of permissions and host access in the manifest file, replacing the more permissive background page model with service workers. This changes how extensions handle persistent background tasks and API calls.",
+    "author": "Vivaan Joshi",
+    "mood": "neutral",
+    "sentimentScore": 0.07,
+    "sentimentComparative": 0.002,
+    "tags": [
+      "coding",
+      "campus"
+    ],
+    "likes": 110,
+    "createdAt": {
+      "$date": "2026-03-27T17:53:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-27T17:53:00Z"
+    }
+  },
+  {
+    "title": "Comparing REST and GraphQL for a Mid-Sized MERN Project",
+    "content": "REST remains simpler to set up and cache, while GraphQL reduces over-fetching for complex nested data. For most college-scale projects, REST is sufficient; GraphQL becomes worth the added complexity once your frontend needs highly variable data shapes across views.",
+    "author": "Tara Bhosale",
+    "mood": "neutral",
+    "sentimentScore": -0.46,
+    "sentimentComparative": -0.0118,
+    "tags": [
+      "reflection",
+      "food",
+      "tech"
+    ],
+    "likes": 199,
+    "createdAt": {
+      "$date": "2026-03-06T01:57:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-06T01:57:00Z"
+    }
+  },
+  {
+    "title": "What Riding the Same Train Route for Four Years Does to You",
+    "content": "The same platform, the same chaiwala, the same fifteen-minute wait. There's a strange comfort in routine landmarks — they become quiet markers of how much you've internally changed while the physical scenery around you stays exactly the same.",
+    "author": "Simran Kaur",
+    "mood": "thoughtful",
+    "sentimentScore": 0.76,
+    "sentimentComparative": 0.02,
+    "tags": [
+      "mumbai",
+      "friendship"
+    ],
+    "likes": 144,
+    "createdAt": {
+      "$date": "2026-02-01T14:20:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-01T14:20:00Z"
+    }
+  },
+  {
+    "title": "Why 'We'll Get Back to You' Should Come With an Actual Timeline",
+    "content": "It's a phrase designed to end an uncomfortable conversation, not to give any real information. If there's no timeline, just say so instead of stringing candidates along indefinitely.",
+    "author": "Meera Pillai",
+    "mood": "fiery",
+    "sentimentScore": -8.09,
+    "sentimentComparative": -0.2889,
+    "tags": [
+      "coding",
+      "friendship",
+      "tech",
+      "freelancing"
+    ],
+    "likes": 179,
+    "createdAt": {
+      "$date": "2026-02-05T19:47:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-05T19:47:00Z"
+    }
+  },
+  {
+    "title": "Street Food Tour of Airoli That Made My Week",
+    "content": "Started at the pani puri stall near the station, ended at a random samosa pav cart I'd never noticed before. Total spend: under 150 rupees. Total happiness: immeasurable. Sometimes the best days don't need a plan, just an appetite and curiosity.",
+    "author": "Rohan Deshmukh",
+    "mood": "uplifting",
+    "sentimentScore": 3.75,
+    "sentimentComparative": 0.0915,
+    "tags": [
+      "campus",
+      "startup",
+      "reflection"
+    ],
+    "likes": 11,
+    "createdAt": {
+      "$date": "2026-03-13T02:35:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-13T02:35:00Z"
+    }
+  },
+  {
+    "title": "Stop Calling Unpaid Internships 'Great Learning Opportunities'",
+    "content": "It's exploitation with better branding. If the work has genuine business value, it has monetary value too. Calling it a 'learning experience' doesn't make skipping payment ethical, it just makes it sound polite.",
+    "author": "Ishita Rao",
+    "mood": "fiery",
+    "sentimentScore": -6.5,
+    "sentimentComparative": -0.197,
+    "tags": [
+      "reflection",
+      "monsoon"
+    ],
+    "likes": 190,
+    "createdAt": {
+      "$date": "2026-02-04T08:14:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-04T08:14:00Z"
+    }
+  },
+  {
+    "title": "How NTES Provides Real-Time Train Status Information",
+    "content": "The National Train Enquiry System aggregates GPS and signaling data to provide live running status, expected arrival times, and platform information for Indian Railways services, accessible via both web interface and API for third-party integration.",
+    "author": "Neha Chavan",
+    "mood": "neutral",
+    "sentimentScore": -0.3,
+    "sentimentComparative": -0.0086,
+    "tags": [
+      "campus",
+      "career",
+      "friendship"
+    ],
+    "likes": 226,
+    "createdAt": {
+      "$date": "2025-09-13T01:15:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-13T01:15:00Z"
+    }
+  },
+  {
+    "title": "A Random Act of Kindness on the Local Train",
+    "content": "An elderly uncle on the 8:15 fast local offered his seat to a pregnant woman before anyone else even noticed she was standing. No fuss, no announcement, just quiet decency. It reminded me that the small, unnoticed kindnesses are the ones that actually hold a city together.",
+    "author": "Nikhil Rane",
+    "mood": "uplifting",
+    "sentimentScore": 6.03,
+    "sentimentComparative": 0.1283,
+    "tags": [
+      "commute",
+      "travel",
+      "food",
+      "friendship"
+    ],
+    "likes": 71,
+    "createdAt": {
+      "$date": "2025-09-14T17:12:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-14T17:12:00Z"
+    }
+  },
+  {
+    "title": "Understanding TF-IDF for Keyword Extraction in Text",
+    "content": "Term Frequency-Inverse Document Frequency scores words based on how often they appear in a document relative to how common they are across a broader corpus, making it useful for identifying distinctive keywords in a body of text.",
+    "author": "Aditya Menon",
+    "mood": "neutral",
+    "sentimentScore": -0.25,
+    "sentimentComparative": -0.0068,
+    "tags": [
+      "networking",
+      "commute",
+      "monsoon"
+    ],
+    "likes": 156,
+    "createdAt": {
+      "$date": "2025-11-02T14:08:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-02T14:08:00Z"
+    }
+  },
+  {
+    "title": "A Practical Guide to Setting Up MongoDB Atlas for Beginners",
+    "content": "This walkthrough covers creating a free-tier cluster, configuring network access rules, setting up a database user, and connecting your Node.js application using the connection string. We'll also cover common errors like IP whitelist mismatches and authentication failures.",
+    "author": "Neha Chavan",
+    "mood": "neutral",
+    "sentimentScore": -0.42,
+    "sentimentComparative": -0.0114,
+    "tags": [
+      "freelancing",
+      "commute",
+      "personal"
+    ],
+    "likes": 32,
+    "createdAt": {
+      "$date": "2025-11-16T17:02:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-16T17:02:00Z"
+    }
+  },
+  {
+    "title": "Honest Thoughts on Being the Only One Still Job Hunting",
+    "content": "Every family gathering now includes the same question, asked with the same fake-casual tone. I've started dreading festivals I used to actually look forward to.",
+    "author": "Arjun Shah",
+    "mood": "raw",
+    "sentimentScore": -5.8,
+    "sentimentComparative": -0.232,
+    "tags": [
+      "monsoon",
+      "campus",
+      "opinion"
+    ],
+    "likes": 192,
+    "createdAt": {
+      "$date": "2026-03-14T10:13:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-14T10:13:00Z"
+    }
+  },
+  {
+    "title": "An Overview of JWT-Based Authentication in Express Applications",
+    "content": "JSON Web Tokens allow stateless authentication by encoding user claims into a signed token verified on each request. This avoids server-side session storage but requires careful handling of token expiry, refresh flows, and secure storage on the client.",
+    "author": "Priya Nair",
+    "mood": "neutral",
+    "sentimentScore": -0.09,
+    "sentimentComparative": -0.0024,
+    "tags": [
+      "travel",
+      "food",
+      "family"
+    ],
+    "likes": 201,
+    "createdAt": {
+      "$date": "2025-12-01T23:59:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-01T23:59:00Z"
+    }
+  },
+  {
+    "title": "What My Grandfather's Old Diaries Taught Me About Patience",
+    "content": "Found a stack of his handwritten notes from decades ago — mundane entries about weather, expenses, small daily observations. There's something grounding about realizing an entire life can be built from ordinary, unremarkable days stacked carefully on top of each other.",
+    "author": "Ananya Iyer",
+    "mood": "thoughtful",
+    "sentimentScore": 0.88,
+    "sentimentComparative": 0.0215,
+    "tags": [
+      "placements",
+      "family",
+      "friendship"
+    ],
+    "likes": 223,
+    "createdAt": {
+      "$date": "2026-06-02T14:08:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-02T14:08:00Z"
+    }
+  },
+  {
+    "title": "I Deleted My LinkedIn App for a Day Because I Couldn't Take It",
+    "content": "Every post was someone announcing an offer I didn't have. I know it's an algorithm showing me a skewed slice of reality. Knowing that didn't stop it from hurting.",
+    "author": "Tara Bhosale",
+    "mood": "raw",
+    "sentimentScore": -3.21,
+    "sentimentComparative": -0.1107,
+    "tags": [
+      "freelancing",
+      "college life"
+    ],
+    "likes": 136,
+    "createdAt": {
+      "$date": "2026-02-02T21:38:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-02T21:38:00Z"
+    }
+  },
+  {
+    "title": "The Freelance Project That Changed How I See My Own Skills",
+    "content": "A client actually thanked me for going beyond the brief on a small MERN dashboard I built. It wasn't a huge project, but it was the first time someone paid me for skills I taught myself. That feeling doesn't fade easily.",
+    "author": "Arjun Shah",
+    "mood": "uplifting",
+    "sentimentScore": 4.27,
+    "sentimentComparative": 0.1041,
+    "tags": [
+      "opinion",
+      "friendship",
+      "personal"
+    ],
+    "likes": 35,
+    "createdAt": {
+      "$date": "2026-02-09T06:41:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-09T06:41:00Z"
+    }
+  },
+  {
+    "title": "I'm Tired of Pretending This Process Isn't Breaking Me a Little",
+    "content": "Every application feels like handing someone a small piece of my self-worth and waiting to see if they'll hand it back damaged or not at all.",
+    "author": "Meera Pillai",
+    "mood": "raw",
+    "sentimentScore": -3.15,
+    "sentimentComparative": -0.1212,
+    "tags": [
+      "food",
+      "opinion",
+      "campus"
+    ],
+    "likes": 169,
+    "createdAt": {
+      "$date": "2026-04-18T00:05:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-18T00:05:00Z"
+    }
+  },
+  {
+    "title": "My Professor Remembered My Project From Last Semester",
+    "content": "Ran into him in the corridor and he immediately asked how the donation platform I built was doing. It's such a small thing, but being remembered for something you built with genuine effort hits different than any grade ever could.",
+    "author": "Zoya Sheikh",
+    "mood": "uplifting",
+    "sentimentScore": 3.38,
+    "sentimentComparative": 0.0845,
+    "tags": [
+      "family",
+      "commute",
+      "mumbai",
+      "tech"
+    ],
+    "likes": 192,
+    "createdAt": {
+      "$date": "2026-03-15T19:29:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-15T19:29:00Z"
+    }
+  },
+  {
+    "title": "The Silence From HR After a Final Round Interview Is Genuinely Disrespectful",
+    "content": "It costs literally nothing to send a two-line rejection email. The fact that companies can't be bothered says everything about how little candidates are valued once they're no longer useful.",
+    "author": "Rohan Deshmukh",
+    "mood": "fiery",
+    "sentimentScore": -4.58,
+    "sentimentComparative": -0.1527,
+    "tags": [
+      "food",
+      "personal",
+      "family",
+      "freelancing"
+    ],
+    "likes": 15,
+    "createdAt": {
+      "$date": "2025-12-11T13:07:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-11T13:07:00Z"
+    }
+  },
+  {
+    "title": "How Wireshark Captures and Filters Network Traffic",
+    "content": "Wireshark captures packets at the network interface level and allows filtering by protocol, IP address, or port using its display filter syntax, making it a common tool for diagnosing network issues and studying protocol behavior.",
+    "author": "Arjun Shah",
+    "mood": "neutral",
+    "sentimentScore": 0.32,
+    "sentimentComparative": 0.0091,
+    "tags": [
+      "friendship",
+      "placements",
+      "growth",
+      "campus"
+    ],
+    "likes": 192,
+    "createdAt": {
+      "$date": "2026-05-17T13:53:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-17T13:53:00Z"
+    }
+  },
+  {
+    "title": "The Basic Differences Between CCNA and Security+ Certifications",
+    "content": "CCNA focuses primarily on networking fundamentals — routing, switching, and Cisco-specific configurations — while Security+ covers broader security concepts applicable across vendors. Many candidates pursue CCNA first for foundational networking knowledge before moving to security-focused certifications.",
+    "author": "Tara Bhosale",
+    "mood": "neutral",
+    "sentimentScore": 0.2,
+    "sentimentComparative": 0.0056,
+    "tags": [
+      "food",
+      "reflection",
+      "friendship"
+    ],
+    "likes": 78,
+    "createdAt": {
+      "$date": "2026-03-15T01:54:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-15T01:54:00Z"
+    }
+  },
+  {
+    "title": "Passed My First DSA Mock Interview and I'm Buzzing",
+    "content": "Two months of grinding Striver's sheet finally clicked today. The interviewer actually smiled at my approach to the two-pointer problem. It's a small win in the grand scheme of placements, but right now it feels enormous.",
+    "author": "Simran Kaur",
+    "mood": "uplifting",
+    "sentimentScore": 6.81,
+    "sentimentComparative": 0.1892,
+    "tags": [
+      "reflection",
+      "family",
+      "career"
+    ],
+    "likes": 162,
+    "createdAt": {
+      "$date": "2026-03-06T05:23:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-06T05:23:00Z"
+    }
+  },
+  {
+    "title": "What Nobody Warns You About Post-Interview Silence",
+    "content": "No rejection email. No offer. Just nothing, for two weeks straight, while you refresh your inbox like it owes you an explanation it clearly isn't going to give.",
+    "author": "Ananya Iyer",
+    "mood": "raw",
+    "sentimentScore": -2.0,
+    "sentimentComparative": -0.0714,
+    "tags": [
+      "college life",
+      "mumbai"
+    ],
+    "likes": 51,
+    "createdAt": {
+      "$date": "2026-02-27T07:41:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-27T07:41:00Z"
+    }
+  },
+  {
+    "title": "Why Ghosting a Candidate After Extending a Verbal Offer Should Have Consequences",
+    "content": "Someone might have turned down another offer trusting your word. There's no accountability mechanism for companies that do this, and there absolutely should be.",
+    "author": "Neha Chavan",
+    "mood": "fiery",
+    "sentimentScore": -7.47,
+    "sentimentComparative": -0.3112,
+    "tags": [
+      "career",
+      "growth",
+      "startup"
+    ],
+    "likes": 85,
+    "createdAt": {
+      "$date": "2026-04-12T20:52:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-12T20:52:00Z"
+    }
+  },
+  {
+    "title": "Why I'm Learning to Sit With Uncertainty Instead of Rushing Past It",
+    "content": "Not knowing where I'll be working in six months used to keep me up at night. I'm slowly learning that some discomfort isn't a problem to be solved immediately — it's just the texture of being in transition, and rushing past it doesn't actually make it resolve faster.",
+    "author": "Sanya Kapoor",
+    "mood": "thoughtful",
+    "sentimentScore": 2.01,
+    "sentimentComparative": 0.0419,
+    "tags": [
+      "growth",
+      "reflection",
+      "opinion"
+    ],
+    "likes": 42,
+    "createdAt": {
+      "$date": "2025-12-31T05:26:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-31T05:26:00Z"
+    }
+  },
+  {
+    "title": "The Honda Service Center Overcharged Me and I'm Done Staying Quiet",
+    "content": "Four services, four inflated bills, and every single time some new vague 'consumable charge' magically appears on the invoice. I've documented everything. This pattern isn't a coincidence, it's a strategy.",
+    "author": "Ishita Rao",
+    "mood": "fiery",
+    "sentimentScore": -6.05,
+    "sentimentComparative": -0.2017,
+    "tags": [
+      "growth",
+      "family",
+      "networking",
+      "coding"
+    ],
+    "likes": 213,
+    "createdAt": {
+      "$date": "2025-12-04T06:13:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-04T06:13:00Z"
+    }
+  },
+  {
+    "title": "Colleges Bragging About Placement Percentages While Hiding the Real Package Numbers Is Dishonest",
+    "content": "Ninety percent placed sounds great until you find out half of that is at packages barely above minimum wage. Show the median, not just the flattering headline number.",
+    "author": "Priya Nair",
+    "mood": "fiery",
+    "sentimentScore": -5.58,
+    "sentimentComparative": -0.1993,
+    "tags": [
+      "family",
+      "career"
+    ],
+    "likes": 61,
+    "createdAt": {
+      "$date": "2025-10-21T06:40:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-21T06:40:00Z"
+    }
+  },
+  {
+    "title": "The Guilt of Wanting to Give Up on DSA Some Days",
+    "content": "I know it's necessary. I know skipping it will hurt me later. Some evenings I just don't have anything left to give it, and the guilt about that is almost worse than the tiredness itself.",
+    "author": "Ishita Rao",
+    "mood": "raw",
+    "sentimentScore": -4.29,
+    "sentimentComparative": -0.1226,
+    "tags": [
+      "monsoon",
+      "mumbai",
+      "travel",
+      "growth"
+    ],
+    "likes": 110,
+    "createdAt": {
+      "$date": "2026-03-09T02:32:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-09T02:32:00Z"
+    }
+  },
+  {
+    "title": "What Razorpay Integration Involves for a MERN Application",
+    "content": "Integration typically involves creating an order on the backend via Razorpay's API, passing the order ID to the frontend checkout widget, and verifying the payment signature server-side after completion to confirm transaction authenticity before updating order status.",
+    "author": "Tara Bhosale",
+    "mood": "neutral",
+    "sentimentScore": -0.38,
+    "sentimentComparative": -0.0103,
+    "tags": [
+      "travel",
+      "mumbai",
+      "networking",
+      "reflection"
+    ],
+    "likes": 110,
+    "createdAt": {
+      "$date": "2025-12-07T08:02:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-07T08:02:00Z"
+    }
+  },
+  {
+    "title": "Why I Stopped Comparing My Placement Timeline to Others",
+    "content": "Watching classmates get offers while I'm still applying used to spiral me for days. I've realized comparison only measures the visible parts of someone else's journey, never the rejections, the doubts, or the version of the process that's uniquely mine to walk through.",
+    "author": "Nikhil Rane",
+    "mood": "thoughtful",
+    "sentimentScore": 1.53,
+    "sentimentComparative": 0.0356,
+    "tags": [
+      "commute",
+      "personal"
+    ],
+    "likes": 147,
+    "createdAt": {
+      "$date": "2026-01-21T21:31:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-21T21:31:00Z"
+    }
+  },
+  {
+    "title": "Why Startups Offering Equity Instead of Salary Need Called Out More Often",
+    "content": "Ten percent equity in an unfunded idea is not compensation, it's a bet you're being asked to make on someone else's dream while paying your own rent with imaginary money.",
+    "author": "Arjun Shah",
+    "mood": "fiery",
+    "sentimentScore": -7.93,
+    "sentimentComparative": -0.2643,
+    "tags": [
+      "mumbai",
+      "commute",
+      "personal"
+    ],
+    "likes": 11,
+    "createdAt": {
+      "$date": "2025-12-26T11:11:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-26T11:11:00Z"
+    }
+  },
+  {
+    "title": "I'm Scared I Peaked in My Second Year and Didn't Notice",
+    "content": "The version of me that built two decent projects and felt unstoppable feels distant now. I don't know when the confidence quietly drained out, but I miss it more than I expected to.",
+    "author": "Zoya Sheikh",
+    "mood": "raw",
+    "sentimentScore": -2.2,
+    "sentimentComparative": -0.0667,
+    "tags": [
+      "growth",
+      "mumbai"
+    ],
+    "likes": 13,
+    "createdAt": {
+      "$date": "2026-04-04T08:53:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-04T08:53:00Z"
+    }
+  },
+  {
+    "title": "I Compared My Timeline to a Stranger's LinkedIn Post and Regretted It",
+    "content": "Some guy posted about three offers before finishing his degree. I know his path isn't mine. I still spent the rest of the night quietly furious at my own pace.",
+    "author": "Rohan Deshmukh",
+    "mood": "raw",
+    "sentimentScore": -2.32,
+    "sentimentComparative": -0.0773,
+    "tags": [
+      "freelancing",
+      "family",
+      "monsoon",
+      "food"
+    ],
+    "likes": 71,
+    "createdAt": {
+      "$date": "2026-05-06T14:27:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-06T14:27:00Z"
+    }
+  },
+  {
+    "title": "I Cried Over a Bug Today and I'm Not Even Sorry",
+    "content": "Three hours into debugging a payment integration that should have taken twenty minutes, something in me just broke a little. It wasn't really about the bug. It was about everything else piling up behind it.",
+    "author": "Simran Kaur",
+    "mood": "raw",
+    "sentimentScore": -4.06,
+    "sentimentComparative": -0.116,
+    "tags": [
+      "opinion",
+      "placements",
+      "friendship",
+      "personal"
+    ],
+    "likes": 136,
+    "createdAt": {
+      "$date": "2026-03-19T10:42:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-19T10:42:00Z"
+    }
+  },
+  {
+    "title": "What I Actually Feel When People Say 'Everything Happens for a Reason'",
+    "content": "I know they mean well. Right now it just sounds like a sentence people say when they don't know what else to say, and it makes the silence after feel even heavier.",
+    "author": "Riya Saxena",
+    "mood": "raw",
+    "sentimentScore": -2.21,
+    "sentimentComparative": -0.0691,
+    "tags": [
+      "growth",
+      "commute",
+      "food"
+    ],
+    "likes": 165,
+    "createdAt": {
+      "$date": "2025-10-14T07:46:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-14T07:46:00Z"
+    }
+  },
+  {
+    "title": "How Mumbai's Suburban Rail Network Is Structured",
+    "content": "The network operates across Western, Central, and Harbour lines, connecting the city's northern suburbs to South Mumbai. Peak-hour frequency can be as tight as every three minutes on the busiest corridors, though this varies significantly by line and time of day.",
+    "author": "Priya Nair",
+    "mood": "neutral",
+    "sentimentScore": 0.06,
+    "sentimentComparative": 0.0015,
+    "tags": [
+      "food",
+      "placements"
+    ],
+    "likes": 225,
+    "createdAt": {
+      "$date": "2026-03-28T19:47:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-28T19:47:00Z"
+    }
+  },
+  {
+    "title": "I Snapped at My Girlfriend Over Something Small and I Know Why",
+    "content": "It wasn't really about the plans she changed. It was about everything I'm not saying out loud about how scared I am right now. I need to apologize and actually mean it.",
+    "author": "Aditya Menon",
+    "mood": "raw",
+    "sentimentScore": -2.64,
+    "sentimentComparative": -0.0825,
+    "tags": [
+      "tech",
+      "freelancing",
+      "reflection"
+    ],
+    "likes": 179,
+    "createdAt": {
+      "$date": "2025-11-18T07:08:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-18T07:08:00Z"
+    }
+  },
+  {
+    "title": "Some Nights I Just Stare at the Ceiling Doing Placement Math",
+    "content": "Calculating how many more months I have, how many companies are left to apply to, how much runway is actually left before panic stops being productive and just becomes noise.",
+    "author": "Ananya Iyer",
+    "mood": "raw",
+    "sentimentScore": -2.28,
+    "sentimentComparative": -0.076,
+    "tags": [
+      "career",
+      "freelancing"
+    ],
+    "likes": 26,
+    "createdAt": {
+      "$date": "2026-03-12T12:45:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-12T12:45:00Z"
+    }
+  },
+  {
+    "title": "Finally Fixed the Hinge Crack Complaint With HP Support",
+    "content": "After weeks of back and forth, HP agreed it was a manufacturing defect and is replacing the chassis for free. Persistence and proper documentation actually paid off. Worth remembering next time a company tries to dodge accountability.",
+    "author": "Zoya Sheikh",
+    "mood": "uplifting",
+    "sentimentScore": 5.92,
+    "sentimentComparative": 0.16,
+    "tags": [
+      "personal",
+      "growth"
+    ],
+    "likes": 42,
+    "createdAt": {
+      "$date": "2025-10-06T17:49:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-06T17:49:00Z"
+    }
+  },
+  {
+    "title": "Finding Joy in Mumbai's Monsoon Chaos",
+    "content": "There's something magical about the first proper monsoon downpour hitting Marine Drive. Yesterday I got completely drenched walking back from the station, and instead of being annoyed, I just started laughing. Sometimes the best moments happen when you stop trying to control everything and just let life splash all over you. Grabbed cutting chai and vada pav right after, and honestly, it might have been the best evening of my month.",
+    "author": "Ishita Rao",
+    "mood": "uplifting",
+    "sentimentScore": 6.84,
+    "sentimentComparative": 0.0963,
+    "tags": [
+      "food",
+      "personal"
+    ],
+    "likes": 173,
+    "createdAt": {
+      "$date": "2025-09-13T23:17:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-13T23:17:00Z"
+    }
+  },
+  {
+    "title": "Job Portals Showing 'Actively Hiring' for Positions Closed Months Ago Is a Scam",
+    "content": "I've applied to three listings this month that were quietly closed since April. Stale listings aren't a minor bug, they're actively wasting the time and hope of people already under enough pressure.",
+    "author": "Riya Saxena",
+    "mood": "fiery",
+    "sentimentScore": -3.64,
+    "sentimentComparative": -0.1138,
+    "tags": [
+      "growth",
+      "tech",
+      "mumbai",
+      "coding"
+    ],
+    "likes": 122,
+    "createdAt": {
+      "$date": "2026-01-28T22:08:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-28T22:08:00Z"
+    }
+  },
+  {
+    "title": "Stop Pretending Coding Bootcamp Certificates Substitute for Real Project Experience",
+    "content": "A three-week course badge does not equal months of debugging an actual production issue at 2 AM. Recruiters conflating the two are setting unrealistic expectations for both sides.",
+    "author": "Nikhil Rane",
+    "mood": "fiery",
+    "sentimentScore": -7.42,
+    "sentimentComparative": -0.265,
+    "tags": [
+      "career",
+      "food",
+      "family"
+    ],
+    "likes": 169,
+    "createdAt": {
+      "$date": "2026-01-23T22:55:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-23T22:55:00Z"
+    }
+  },
+  {
+    "title": "On Choosing Between Passion and Practicality in Career Paths",
+    "content": "I keep going back and forth between networking/security, which genuinely interests me, and MERN development, which is more immediately employable. Maybe the honest answer isn't choosing one forever, but sequencing them — build the practical foundation now, let the passion project run quietly alongside it.",
+    "author": "Dev Patel",
+    "mood": "thoughtful",
+    "sentimentScore": 0.96,
+    "sentimentComparative": 0.0213,
+    "tags": [
+      "college life",
+      "food",
+      "career",
+      "campus"
+    ],
+    "likes": 18,
+    "createdAt": {
+      "$date": "2025-12-22T00:04:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-22T00:04:00Z"
+    }
+  },
+  {
+    "title": "Job Descriptions Demanding Three Years of Experience for 'Entry Level' Roles Make No Sense",
+    "content": "Either define entry level honestly or stop using the term as bait to attract cheaper labor from people who don't yet know better than to apply.",
+    "author": "Aditya Menon",
+    "mood": "fiery",
+    "sentimentScore": -5.3,
+    "sentimentComparative": -0.2038,
+    "tags": [
+      "growth",
+      "networking"
+    ],
+    "likes": 234,
+    "createdAt": {
+      "$date": "2026-01-16T18:02:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-16T18:02:00Z"
+    }
+  },
+  {
+    "title": "A Breakdown of Common Data Structures Covered in Placement Interviews",
+    "content": "Arrays, strings, and hashing typically form the foundation, followed by linked lists, stacks, and queues. Trees and graphs are usually introduced later, with dynamic programming and backtracking generally considered advanced topics for later-stage interview rounds.",
+    "author": "Priya Nair",
+    "mood": "neutral",
+    "sentimentScore": -0.1,
+    "sentimentComparative": -0.0029,
+    "tags": [
+      "travel",
+      "opinion"
+    ],
+    "likes": 157,
+    "createdAt": {
+      "$date": "2026-01-30T17:08:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-30T17:08:00Z"
+    }
+  },
+  {
+    "title": "The Structure of India's GCC (Global Capability Centre) Hiring Market",
+    "content": "GCCs are offshore units set up by multinational companies to handle engineering, analytics, or operations work. They often have more predictable hiring cycles than product startups and tend to offer more structured onboarding for entry-level hires.",
+    "author": "Neha Chavan",
+    "mood": "neutral",
+    "sentimentScore": -0.43,
+    "sentimentComparative": -0.0119,
+    "tags": [
+      "tech",
+      "coding",
+      "networking",
+      "freelancing"
+    ],
+    "likes": 83,
+    "createdAt": {
+      "$date": "2026-02-17T19:20:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-17T19:20:00Z"
+    }
+  },
+  {
+    "title": "A Stranger Paid for My Auto Fare When My UPI Failed",
+    "content": "My payment app crashed mid-ride and I didn't have cash. A stranger waiting nearby just paid it without a second thought and waved off my thanks. Mumbai gets a bad rap sometimes, but moments like this are the real texture of this city.",
+    "author": "Rohan Deshmukh",
+    "mood": "uplifting",
+    "sentimentScore": 8.91,
+    "sentimentComparative": 0.2072,
+    "tags": [
+      "freelancing",
+      "career"
+    ],
+    "likes": 187,
+    "createdAt": {
+      "$date": "2026-02-05T07:03:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-05T07:03:00Z"
+    }
+  },
+  {
+    "title": "The Day My Team Actually Shipped the Feature",
+    "content": "We'd been stuck on a bug for four days straight. At 2 AM, someone finally spotted the missing null check, and the whole group chat exploded with celebration emojis. There's nothing quite like that collective high-five feeling after solving something hard together.",
+    "author": "Aditya Menon",
+    "mood": "uplifting",
+    "sentimentScore": 5.02,
+    "sentimentComparative": 0.1195,
+    "tags": [
+      "startup",
+      "family",
+      "college life"
+    ],
+    "likes": 137,
+    "createdAt": {
+      "$date": "2025-10-18T12:06:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-18T12:06:00Z"
+    }
+  },
+  {
+    "title": "Why Adopting a Street Dog Was the Best Decision of My Year",
+    "content": "Bruno was terrified of humans for the first two weeks. Today he fell asleep on my feet while I was debugging code. Watching an animal learn to trust you, slowly and on its own terms, teaches you more about patience than any self-help book.",
+    "author": "Dev Patel",
+    "mood": "uplifting",
+    "sentimentScore": 4.03,
+    "sentimentComparative": 0.0916,
+    "tags": [
+      "family",
+      "commute",
+      "food"
+    ],
+    "likes": 215,
+    "createdAt": {
+      "$date": "2026-01-04T05:29:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-04T05:29:00Z"
+    }
+  },
+  {
+    "title": "Understanding RBAC: Role-Based Access Control Basics",
+    "content": "RBAC assigns permissions to roles rather than individual users, simplifying access management as an application scales. A typical implementation defines roles like admin, editor, and viewer, each mapped to a specific set of allowed actions on protected routes.",
+    "author": "Simran Kaur",
+    "mood": "neutral",
+    "sentimentScore": 0.46,
+    "sentimentComparative": 0.0121,
+    "tags": [
+      "travel",
+      "startup",
+      "monsoon",
+      "campus"
+    ],
+    "likes": 130,
+    "createdAt": {
+      "$date": "2026-01-14T01:06:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-14T01:06:00Z"
+    }
+  },
+  {
+    "title": "The Slow Realization That Not Every Project Needs to Be Original",
+    "content": "I spent weeks hunting for a completely novel major project idea before realizing that most meaningful work is really just an old problem examined from a slightly different, more careful angle. Originality in execution matters more than originality in premise.",
+    "author": "Arjun Shah",
+    "mood": "thoughtful",
+    "sentimentScore": 1.67,
+    "sentimentComparative": 0.0417,
+    "tags": [
+      "reflection",
+      "monsoon",
+      "food"
+    ],
+    "likes": 101,
+    "createdAt": {
+      "$date": "2026-05-26T10:59:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-26T10:59:00Z"
+    }
+  },
+  {
+    "title": "On Learning to Ask for Help Without Feeling Like a Burden",
+    "content": "I used to debug alone for hours rather than ping a teammate, worried it would make me look incapable. Slowly learning that asking early is actually a sign of self-awareness, not weakness, has probably saved me more time than any technical skill I've picked up this year.",
+    "author": "Dev Patel",
+    "mood": "thoughtful",
+    "sentimentScore": 2.31,
+    "sentimentComparative": 0.0491,
+    "tags": [
+      "family",
+      "college life",
+      "mumbai"
+    ],
+    "likes": 197,
+    "createdAt": {
+      "$date": "2025-09-27T02:40:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-27T02:40:00Z"
+    }
+  },
+  {
+    "title": "I Finally Beat My Personal Best on the Morning Run",
+    "content": "Shaved forty seconds off my usual loop around the park today. Small number, huge internal celebration. Consistency really is the most underrated superpower — nobody claps for you on day 40, but day 40 is when it actually starts paying off.",
+    "author": "Neha Chavan",
+    "mood": "uplifting",
+    "sentimentScore": 6.06,
+    "sentimentComparative": 0.1478,
+    "tags": [
+      "personal",
+      "placements"
+    ],
+    "likes": 152,
+    "createdAt": {
+      "$date": "2025-10-17T01:55:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-17T01:55:00Z"
+    }
+  },
+  {
+    "title": "Reflections on Building My First Real Project From Scratch",
+    "content": "United Impact started as a rough idea in a notebook. Watching it become something with actual auth flows, RBAC, and a payment gateway taught me that most big builds are really just a hundred small decisions made consistently over weeks.",
+    "author": "Ishita Rao",
+    "mood": "thoughtful",
+    "sentimentScore": 1.32,
+    "sentimentComparative": 0.033,
+    "tags": [
+      "tech",
+      "college life",
+      "opinion",
+      "monsoon"
+    ],
+    "likes": 63,
+    "createdAt": {
+      "$date": "2025-09-28T21:41:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-28T21:41:00Z"
+    }
+  },
+  {
+    "title": "A Perfect Sunday: Cricket, Chai, and No Screens",
+    "content": "Played gully cricket with the building kids, lost badly, didn't care. Came home to hot chai and my mom's stories about her own college days. No phone notifications, no deadlines. Just a day that reminded me why weekends exist.",
+    "author": "Arjun Shah",
+    "mood": "uplifting",
+    "sentimentScore": 7.61,
+    "sentimentComparative": 0.1951,
+    "tags": [
+      "monsoon",
+      "opinion"
+    ],
+    "likes": 16,
+    "createdAt": {
+      "$date": "2025-09-29T07:52:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-29T07:52:00Z"
+    }
+  },
+  {
+    "title": "Thinking About What 'Success' Actually Meant to Me at 18 vs Now",
+    "content": "At 18 it was a big-name company and a big number. Now it's closer to work that doesn't drain me by Wednesday and colleagues I don't dread messaging. The metrics quietly shifted somewhere along the way without me consciously deciding to change them.",
+    "author": "Zoya Sheikh",
+    "mood": "thoughtful",
+    "sentimentScore": 1.07,
+    "sentimentComparative": 0.0249,
+    "tags": [
+      "campus",
+      "networking",
+      "mumbai"
+    ],
+    "likes": 76,
+    "createdAt": {
+      "$date": "2026-04-13T17:45:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-13T17:45:00Z"
+    }
+  },
+  {
+    "title": "What Watching My Parents' Small Business Struggle Taught Me",
+    "content": "Growing up around a shop that barely broke even some months gave me a different relationship with risk than my classmates who grew up in salaried households. It's shaped how cautiously — maybe too cautiously — I approach my own career decisions now.",
+    "author": "Sanya Kapoor",
+    "mood": "thoughtful",
+    "sentimentScore": 0.88,
+    "sentimentComparative": 0.0205,
+    "tags": [
+      "commute",
+      "college life",
+      "monsoon",
+      "freelancing"
+    ],
+    "likes": 149,
+    "createdAt": {
+      "$date": "2025-12-21T01:37:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-21T01:37:00Z"
+    }
+  },
+  {
+    "title": "Why Networking Terrifies Me More Than Technical Interviews",
+    "content": "I can debug a broken API for hours without flinching, but sending a cold LinkedIn message to a stranger asking for a referral makes my hands sweat. I think it's because code failing feels neutral, but a person ignoring you feels personal, even when it isn't.",
+    "author": "Neha Chavan",
+    "mood": "thoughtful",
+    "sentimentScore": 0.74,
+    "sentimentComparative": 0.0161,
+    "tags": [
+      "campus",
+      "career"
+    ],
+    "likes": 168,
+    "createdAt": {
+      "$date": "2026-01-05T18:38:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-05T18:38:00Z"
+    }
+  },
+  {
+    "title": "I Don't Know If I'm Cut Out for This Anymore",
+    "content": "Third rejection this week. I sat in the college washroom for ten minutes because I didn't want anyone to see my face. I know everyone says it's normal, but knowing that doesn't actually make the loop in my head shut up.",
+    "author": "Yash Kulkarni",
+    "mood": "raw",
+    "sentimentScore": -4.91,
+    "sentimentComparative": -0.1198,
+    "tags": [
+      "personal",
+      "food"
+    ],
+    "likes": 177,
+    "createdAt": {
+      "$date": "2026-02-11T17:05:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-11T17:05:00Z"
+    }
+  },
+  {
+    "title": "The Truth About Watching Friends Get Placed First",
+    "content": "I smiled and congratulated her in the group chat. Then I closed my laptop and just sat there for a while, not really thinking about anything, just sitting with a heaviness I didn't want to name out loud.",
+    "author": "Neha Chavan",
+    "mood": "raw",
+    "sentimentScore": -5.39,
+    "sentimentComparative": -0.1418,
+    "tags": [
+      "monsoon",
+      "commute",
+      "friendship"
+    ],
+    "likes": 15,
+    "createdAt": {
+      "$date": "2025-12-19T02:26:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-19T02:26:00Z"
+    }
+  },
+  {
+    "title": "The Basic Anatomy of a Cover Letter for Tech Internships",
+    "content": "An effective cover letter typically opens with a specific reason for interest in the company, follows with concrete evidence of relevant skills or projects, and closes with a clear, low-friction call to action for next steps.",
+    "author": "Ananya Iyer",
+    "mood": "neutral",
+    "sentimentScore": -0.42,
+    "sentimentComparative": -0.0117,
+    "tags": [
+      "monsoon",
+      "career",
+      "food",
+      "coding"
+    ],
+    "likes": 206,
+    "createdAt": {
+      "$date": "2026-05-22T21:40:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-22T21:40:00Z"
+    }
+  },
+  {
+    "title": "The Myth That Working for Free Now Guarantees Payment Later Needs to Die",
+    "content": "'We'll compensate you once we get funding' has burned enough people that it should be treated as a red flag by default, not a reasonable arrangement to just accept on trust.",
+    "author": "Aarav Mehta",
+    "mood": "fiery",
+    "sentimentScore": -7.23,
+    "sentimentComparative": -0.2332,
+    "tags": [
+      "freelancing",
+      "campus"
+    ],
+    "likes": 195,
+    "createdAt": {
+      "$date": "2026-01-07T00:05:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-07T00:05:00Z"
+    }
+  },
+  {
+    "title": "The Loneliness of Studying DSA While Everyone Else Seems Ahead",
+    "content": "I open LeetCode, solve two problems badly, and close the tab feeling worse than before I started. I know comparison is pointless. I still can't stop doing it at 1 AM.",
+    "author": "Aditya Menon",
+    "mood": "raw",
+    "sentimentScore": -5.89,
+    "sentimentComparative": -0.19,
+    "tags": [
+      "mumbai",
+      "career",
+      "travel",
+      "personal"
+    ],
+    "likes": 46,
+    "createdAt": {
+      "$date": "2026-03-21T18:36:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-21T18:36:00Z"
+    }
+  },
+  {
+    "title": "The Unspoken Grief of Leaving a Campus You Complained About for Years",
+    "content": "I spent four years mildly annoyed by the canteen queues and slow WiFi. Now, weeks from graduating, I find myself oddly protective of memories I never thought I'd miss. Maybe complaint and attachment were always sitting closer together than I realized.",
+    "author": "Riya Saxena",
+    "mood": "thoughtful",
+    "sentimentScore": 1.06,
+    "sentimentComparative": 0.0259,
+    "tags": [
+      "family",
+      "networking"
+    ],
+    "likes": 64,
+    "createdAt": {
+      "$date": "2025-12-17T22:21:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-17T22:21:00Z"
+    }
+  },
+  {
+    "title": "Enough With Fake Urgency in Job Postings to Pressure Candidates Into Rushed Decisions",
+    "content": "'Only accepting applications for 24 more hours' on a listing that's been up for three weeks is a manipulation tactic, not a genuine hiring timeline.",
+    "author": "Simran Kaur",
+    "mood": "fiery",
+    "sentimentScore": -4.22,
+    "sentimentComparative": -0.1688,
+    "tags": [
+      "networking",
+      "startup"
+    ],
+    "likes": 193,
+    "createdAt": {
+      "$date": "2026-04-25T13:03:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-25T13:03:00Z"
+    }
+  },
+  {
+    "title": "First Rain of the Season Hit While I Was on My Activa",
+    "content": "Pulled over under a flyover with five other bikers, all of us grinning like idiots waiting out the downpour together, total strangers sharing biscuits from someone's bag. Ten minutes of pure, unplanned community.",
+    "author": "Aditya Menon",
+    "mood": "uplifting",
+    "sentimentScore": 4.59,
+    "sentimentComparative": 0.1391,
+    "tags": [
+      "reflection",
+      "coding",
+      "opinion",
+      "startup"
+    ],
+    "likes": 230,
+    "createdAt": {
+      "$date": "2026-04-05T06:59:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-05T06:59:00Z"
+    }
+  },
+  {
+    "title": "Enough With 'Culture Fit' as an Excuse to Reject Diverse Candidates",
+    "content": "It's become a convenient, unaccountable phrase that lets bias hide behind professional-sounding language. If you can't articulate a real reason, don't dress up prejudice as a values statement.",
+    "author": "Meera Pillai",
+    "mood": "fiery",
+    "sentimentScore": -6.71,
+    "sentimentComparative": -0.2396,
+    "tags": [
+      "friendship",
+      "coding",
+      "travel"
+    ],
+    "likes": 145,
+    "createdAt": {
+      "$date": "2025-12-25T16:24:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-25T16:24:00Z"
+    }
+  },
+  {
+    "title": "The Typical Structure of a Fresher CTC Package in India",
+    "content": "A standard fresher offer usually splits into a fixed component, making up roughly 85 to 90 percent of the total CTC, and a variable component tied to bonuses or performance, with the exact split varying by company and role.",
+    "author": "Meera Pillai",
+    "mood": "neutral",
+    "sentimentScore": -0.25,
+    "sentimentComparative": -0.0064,
+    "tags": [
+      "food",
+      "family",
+      "friendship",
+      "career"
+    ],
+    "likes": 60,
+    "createdAt": {
+      "$date": "2026-01-20T16:31:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-20T16:31:00Z"
+    }
+  },
+  {
+    "title": "The Chai Guy Outside College Gave Me a Free Cutting Today",
+    "content": "Said it was because I looked like I needed it after an exam. Small gestures like this are exactly why I'll miss this campus more than I expect to. Some people build community one cup of chai at a time.",
+    "author": "Arjun Shah",
+    "mood": "uplifting",
+    "sentimentScore": 4.6,
+    "sentimentComparative": 0.115,
+    "tags": [
+      "placements",
+      "friendship",
+      "mumbai"
+    ],
+    "likes": 128,
+    "createdAt": {
+      "$date": "2026-02-22T03:18:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-22T03:18:00Z"
+    }
+  },
+  {
+    "title": "The Ethics of AI Tools in a Computer Science Education",
+    "content": "Using AI to debug or scaffold code raises a quiet question I keep circling back to: where's the line between a tool that accelerates learning and a crutch that hollows it out? I don't have a clean answer, but I think the question itself is worth sitting with regularly.",
+    "author": "Riya Saxena",
+    "mood": "thoughtful",
+    "sentimentScore": 1.26,
+    "sentimentComparative": 0.0257,
+    "tags": [
+      "coding",
+      "travel",
+      "commute"
+    ],
+    "likes": 39,
+    "createdAt": {
+      "$date": "2026-03-19T08:59:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-19T08:59:00Z"
+    }
+  },
+  {
+    "title": "Diwali Lights Went Up in Our Building Today",
+    "content": "Every balcony strung with lights, kids running around with sparklers, the smell of ghee and fresh sweets from three different houses mixing in the stairwell. Some evenings just remind you how good ordinary life can be when everyone shows up for it together.",
+    "author": "Ananya Iyer",
+    "mood": "uplifting",
+    "sentimentScore": 4.48,
+    "sentimentComparative": 0.1042,
+    "tags": [
+      "travel",
+      "freelancing",
+      "opinion",
+      "startup"
+    ],
+    "likes": 35,
+    "createdAt": {
+      "$date": "2026-06-03T08:47:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-03T08:47:00Z"
+    }
+  },
+  {
+    "title": "An Introduction to XGBoost for Classification Problems",
+    "content": "XGBoost is a gradient boosting framework that builds an ensemble of decision trees sequentially, with each tree correcting errors from the previous ones. It's commonly used for structured/tabular data problems due to its speed and built-in regularization.",
+    "author": "Priya Nair",
+    "mood": "neutral",
+    "sentimentScore": 0.29,
+    "sentimentComparative": 0.0078,
+    "tags": [
+      "reflection",
+      "networking",
+      "growth"
+    ],
+    "likes": 168,
+    "createdAt": {
+      "$date": "2026-02-12T14:28:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-12T14:28:00Z"
+    }
+  },
+  {
+    "title": "Recruiters Who Ask 'Why Should We Hire a Fresher Over Experienced Candidates' Need Better Questions",
+    "content": "It's a trap question dressed as insight. Ask about my actual skills, not for me to justify my own existence in an entry-level pool that literally exists for freshers.",
+    "author": "Riya Saxena",
+    "mood": "fiery",
+    "sentimentScore": -6.58,
+    "sentimentComparative": -0.2269,
+    "tags": [
+      "tech",
+      "career",
+      "opinion"
+    ],
+    "likes": 18,
+    "createdAt": {
+      "$date": "2025-12-04T01:16:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-12-04T01:16:00Z"
+    }
+  },
+  {
+    "title": "How I Finally Landed My Dream Internship",
+    "content": "After months of rejections and radio silence from companies, I got the email today. My hands were literally shaking. To anyone still grinding through their off-campus search — every single 'no' was quietly building the version of me that was ready to say yes to the right opportunity. Keep applying. It genuinely does turn around.",
+    "author": "Vivaan Joshi",
+    "mood": "uplifting",
+    "sentimentScore": 7.44,
+    "sentimentComparative": 0.1353,
+    "tags": [
+      "college life",
+      "mumbai",
+      "career"
+    ],
+    "likes": 59,
+    "createdAt": {
+      "$date": "2026-06-07T02:37:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-06-07T02:37:00Z"
+    }
+  },
+  {
+    "title": "Freelance Clients Who Expand Scope Without Renegotiating Payment Are the Worst",
+    "content": "'Just one more small feature' four times in a row is not small anymore. If the ask grows, the invoice grows. This shouldn't need explaining, yet apparently it does.",
+    "author": "Neha Chavan",
+    "mood": "fiery",
+    "sentimentScore": -6.79,
+    "sentimentComparative": -0.2341,
+    "tags": [
+      "friendship",
+      "career",
+      "college life"
+    ],
+    "likes": 188,
+    "createdAt": {
+      "$date": "2026-01-18T16:34:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-18T16:34:00Z"
+    }
+  },
+  {
+    "title": "What a Failed Freelance Client Relationship Taught Me About Boundaries",
+    "content": "I said yes to endless scope changes because I was afraid of losing the project. It taught me, expensively, that a boundary stated clearly and early is worth far more than the short-term comfort of avoiding an uncomfortable conversation.",
+    "author": "Aarav Mehta",
+    "mood": "thoughtful",
+    "sentimentScore": 0.76,
+    "sentimentComparative": 0.0195,
+    "tags": [
+      "commute",
+      "travel",
+      "campus"
+    ],
+    "likes": 28,
+    "createdAt": {
+      "$date": "2026-01-13T05:47:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-13T05:47:00Z"
+    }
+  },
+  {
+    "title": "What Four Years of Engineering Actually Taught Me",
+    "content": "It wasn't the syllabus. It was learning how to sit with confusion long enough for it to become clarity, how to ask for help without ego, and how to keep going when a project breaks at 1 AM before a deadline. The degree is a certificate; the resilience is the actual education.",
+    "author": "Nikhil Rane",
+    "mood": "thoughtful",
+    "sentimentScore": 1.54,
+    "sentimentComparative": 0.0296,
+    "tags": [
+      "monsoon",
+      "mumbai"
+    ],
+    "likes": 141,
+    "createdAt": {
+      "$date": "2025-11-01T07:14:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-11-01T07:14:00Z"
+    }
+  },
+  {
+    "title": "On Rereading Old College Notes Before Finals",
+    "content": "There's something almost archaeological about flipping through first-year notes now — the handwriting more careful, the concepts I once found impossibly hard now feeling almost trivial. It's a strange, quiet way to measure how much has actually changed.",
+    "author": "Ananya Iyer",
+    "mood": "thoughtful",
+    "sentimentScore": 1.45,
+    "sentimentComparative": 0.0382,
+    "tags": [
+      "career",
+      "placements",
+      "campus",
+      "commute"
+    ],
+    "likes": 103,
+    "createdAt": {
+      "$date": "2026-05-30T05:03:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-30T05:03:00Z"
+    }
+  },
+  {
+    "title": "Admitting I'm Jealous of Classmates With Family Connections",
+    "content": "They got interviews through an uncle's referral. I know effort isn't the only factor in this game, and some days that fact is genuinely hard to sit with without resentment creeping in.",
+    "author": "Aarav Mehta",
+    "mood": "raw",
+    "sentimentScore": -4.05,
+    "sentimentComparative": -0.1266,
+    "tags": [
+      "campus",
+      "family",
+      "commute"
+    ],
+    "likes": 132,
+    "createdAt": {
+      "$date": "2026-03-01T08:21:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-01T08:21:00Z"
+    }
+  },
+  {
+    "title": "Recruiters Judging Candidates for Asking About Work-Life Balance Need a Reality Check",
+    "content": "Asking about hours isn't a lack of commitment, it's basic due diligence. Treating the question as a red flag says more about the company's expectations than the candidate's.",
+    "author": "Aarav Mehta",
+    "mood": "fiery",
+    "sentimentScore": -6.5,
+    "sentimentComparative": -0.2321,
+    "tags": [
+      "opinion",
+      "networking"
+    ],
+    "likes": 168,
+    "createdAt": {
+      "$date": "2026-02-09T08:20:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-02-09T08:20:00Z"
+    }
+  },
+  {
+    "title": "Why I Started Waking Up at 6 AM and Never Looked Back",
+    "content": "I used to think early mornings were a myth people posted about on LinkedIn. Three weeks in, and I genuinely look forward to the quiet hour before the city wakes up — just me, filter coffee, and a to-do list that doesn't feel overwhelming yet. Small habit, massive shift in mood.",
+    "author": "Vivaan Joshi",
+    "mood": "uplifting",
+    "sentimentScore": 7.86,
+    "sentimentComparative": 0.1541,
+    "tags": [
+      "monsoon",
+      "family",
+      "personal"
+    ],
+    "likes": 195,
+    "createdAt": {
+      "$date": "2025-09-04T05:44:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-04T05:44:00Z"
+    }
+  },
+  {
+    "title": "Learned to Ride a Skateboard at 21 and Loved Every Fall",
+    "content": "Fell probably thirty times in the society parking lot. A bunch of kids half my age cheered every time I got back up. Turns out it's never too late to be a beginner at something, and beginners have the most fun anyway.",
+    "author": "Tara Bhosale",
+    "mood": "uplifting",
+    "sentimentScore": 7.57,
+    "sentimentComparative": 0.1802,
+    "tags": [
+      "coding",
+      "networking",
+      "reflection",
+      "personal"
+    ],
+    "likes": 195,
+    "createdAt": {
+      "$date": "2026-05-18T03:55:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-18T03:55:00Z"
+    }
+  },
+  {
+    "title": "Nobody Tells You How Exhausting Constant Rejection Actually Is",
+    "content": "It's not one big blow. It's death by a hundred small emails, each one slightly chipping at the belief that you're actually good enough for any of this. I'm tired in a way sleep doesn't seem to fix.",
+    "author": "Aarav Mehta",
+    "mood": "raw",
+    "sentimentScore": -5.17,
+    "sentimentComparative": -0.1361,
+    "tags": [
+      "mumbai",
+      "freelancing",
+      "opinion",
+      "growth"
+    ],
+    "likes": 90,
+    "createdAt": {
+      "$date": "2026-04-04T12:57:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-04T12:57:00Z"
+    }
+  },
+  {
+    "title": "The Practice of Asking Salary Expectations Before Discussing Role Scope Is Backwards",
+    "content": "How am I supposed to give a number before I even know what the job actually demands? This process consistently favors the company's information advantage over the candidate's.",
+    "author": "Sanya Kapoor",
+    "mood": "fiery",
+    "sentimentScore": -8.04,
+    "sentimentComparative": -0.2871,
+    "tags": [
+      "friendship",
+      "growth",
+      "coding"
+    ],
+    "likes": 59,
+    "createdAt": {
+      "$date": "2025-10-09T05:00:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-09T05:00:00Z"
+    }
+  },
+  {
+    "title": "The Absurdity of 'Passion' Being Used to Justify Below-Market Pay",
+    "content": "Passion doesn't pay rent. Companies love to talk about passion right up until payday, when suddenly it's all about 'market standards' again, conveniently in their favor.",
+    "author": "Zoya Sheikh",
+    "mood": "fiery",
+    "sentimentScore": -7.23,
+    "sentimentComparative": -0.2781,
+    "tags": [
+      "growth",
+      "coding",
+      "opinion"
+    ],
+    "likes": 9,
+    "createdAt": {
+      "$date": "2025-10-24T05:21:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-24T05:21:00Z"
+    }
+  },
+  {
+    "title": "Why I Keep a Rejection Log Instead of Deleting Those Emails",
+    "content": "Every 'we've decided to move forward with other candidates' email goes into a folder instead of the trash. Not out of masochism, but because looking back at the pattern later has taught me more about what I actually need to improve than any single rejection ever could alone.",
+    "author": "Kabir Malhotra",
+    "mood": "thoughtful",
+    "sentimentScore": 2.36,
+    "sentimentComparative": 0.0492,
+    "tags": [
+      "tech",
+      "commute"
+    ],
+    "likes": 69,
+    "createdAt": {
+      "$date": "2025-10-24T04:16:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-24T04:16:00Z"
+    }
+  },
+  {
+    "title": "My Startup Idea Got Its First Real User Today",
+    "content": "Not a friend testing it out of pity — an actual stranger signed up and used the app for two hours straight. It's one user. It felt like a thousand. Building something people actually want is a genuinely different high from just building something.",
+    "author": "Tara Bhosale",
+    "mood": "uplifting",
+    "sentimentScore": 3.97,
+    "sentimentComparative": 0.0902,
+    "tags": [
+      "growth",
+      "mumbai",
+      "tech"
+    ],
+    "likes": 224,
+    "createdAt": {
+      "$date": "2026-05-30T00:38:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-30T00:38:00Z"
+    }
+  },
+  {
+    "title": "The Weight of Being 'the Smart One' in a Family That Expects Big Things",
+    "content": "Every conversation eventually circles back to what package I'm expecting. I don't know how to tell them I'd settle for anything right now, just to stop feeling like a disappointment in progress.",
+    "author": "Nikhil Rane",
+    "mood": "raw",
+    "sentimentScore": -4.98,
+    "sentimentComparative": -0.1556,
+    "tags": [
+      "tech",
+      "placements",
+      "coding",
+      "campus"
+    ],
+    "likes": 6,
+    "createdAt": {
+      "$date": "2026-03-08T05:38:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-08T05:38:00Z"
+    }
+  },
+  {
+    "title": "On the Pressure of Being the 'Practical' Sibling",
+    "content": "Everyone in the family expects me to pick the safe, high-paying route, while my own curiosity keeps pulling toward networking and security work that pays less immediately. I'm still figuring out how much of my career should belong to their expectations versus my own interests.",
+    "author": "Ananya Iyer",
+    "mood": "thoughtful",
+    "sentimentScore": 2.49,
+    "sentimentComparative": 0.0553,
+    "tags": [
+      "family",
+      "personal",
+      "startup",
+      "career"
+    ],
+    "likes": 94,
+    "createdAt": {
+      "$date": "2025-10-08T17:13:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T17:13:00Z"
+    }
+  },
+  {
+    "title": "On the Strange Loneliness of Final Year",
+    "content": "Everyone around you is technically present, but each person is quietly consumed by their own placement anxiety, project deadlines, and uncertain futures. It's a specific kind of isolation — surrounded by people going through the exact same thing, yet somehow each of us feeling alone in it.",
+    "author": "Rohan Deshmukh",
+    "mood": "thoughtful",
+    "sentimentScore": 2.35,
+    "sentimentComparative": 0.05,
+    "tags": [
+      "commute",
+      "mumbai"
+    ],
+    "likes": 237,
+    "createdAt": {
+      "$date": "2026-04-15T17:06:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-04-15T17:06:00Z"
+    }
+  },
+  {
+    "title": "My Grandmother Taught Me to Cook Puran Poli Today",
+    "content": "Flour on the counter, her hands guiding mine, and stories about her own childhood kitchen in between. I didn't just learn a recipe — I got an afternoon with her I'll replay in my head for years. Some traditions are really just love wearing a recipe's clothes.",
+    "author": "Arjun Shah",
+    "mood": "uplifting",
+    "sentimentScore": 6.97,
+    "sentimentComparative": 0.1483,
+    "tags": [
+      "tech",
+      "opinion"
+    ],
+    "likes": 116,
+    "createdAt": {
+      "$date": "2026-01-27T02:54:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-01-27T02:54:00Z"
+    }
+  },
+  {
+    "title": "A Simple Explanation of the OSI Model's Seven Layers",
+    "content": "The OSI model describes network communication across seven layers, from physical transmission at Layer 1 to application-level protocols at Layer 7, providing a conceptual framework for understanding how different networking protocols interact.",
+    "author": "Sanya Kapoor",
+    "mood": "neutral",
+    "sentimentScore": 0.19,
+    "sentimentComparative": 0.0059,
+    "tags": [
+      "networking",
+      "friendship"
+    ],
+    "likes": 142,
+    "createdAt": {
+      "$date": "2025-10-25T13:14:00Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-25T13:14:00Z"
+    }
+  },
+  {
+    "title": "Companies Ghosting Candidates After Three Interview Rounds Is Unacceptable",
+    "content": "You put someone through four hours of unpaid technical rounds and then just vanish? No rejection email, no closure, nothing. This isn't 'busy HR teams' — it's basic disrespect dressed up as corporate process.",
+    "author": "Tara Bhosale",
+    "mood": "fiery",
+    "sentimentScore": -5.8,
+    "sentimentComparative": -0.1706,
+    "tags": [
+      "travel",
+      "commute",
+      "monsoon"
+    ],
+    "likes": 179,
+    "createdAt": {
+      "$date": "2026-05-01T17:33:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-01T17:33:00Z"
+    }
+  },
+  {
+    "title": "What It Feels Like to Doubt a Degree You Spent Four Years On",
+    "content": "Some days I genuinely wonder if this entire path was a mistake. Not because I hate coding, but because I hate how uncertain the payoff feels after everything I've put in.",
+    "author": "Arjun Shah",
+    "mood": "raw",
+    "sentimentScore": -4.81,
+    "sentimentComparative": -0.1552,
+    "tags": [
+      "commute",
+      "food",
+      "growth",
+      "freelancing"
+    ],
+    "likes": 111,
+    "createdAt": {
+      "$date": "2026-03-19T13:34:00Z"
+    },
+    "updatedAt": {
+      "$date": "2026-03-19T13:34:00Z"
+    }
+  }
+]
