@@ -57,27 +57,48 @@ export default function Home() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState('')
     const [query, setQuery] = useState('')
+    const [debouncedQuery, setDebouncedQuery] = useState('')
     const [sort, setSort] = useState('newest')
     const [activeMood, setActiveMood] = useState('')
     const [currentPage, setCurrentPage] = useState(1)
-    
-    const POSTS_PER_PAGE = 9
+    const [totalPages, setTotalPages] = useState(1)
+    const [totalPosts, setTotalPosts] = useState(0)
+
+    // Debounce text search
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDebouncedQuery(query)
+            setCurrentPage(1)
+        }, 400)
+        return () => clearTimeout(timer)
+    }, [query])
 
     // Reset to page 1 whenever filters change
     useEffect(() => {
         setCurrentPage(1)
-    }, [query, sort, activeMood])
+    }, [sort, activeMood])
 
     useEffect(() => {
         async function fetchPosts() {
+            setLoading(true)
             try {
-                const url = activeMood
-                    ? `/api/posts/?mood=${encodeURIComponent(activeMood)}`
-                    : '/api/posts/'
+                const params = new URLSearchParams({
+                    page: currentPage,
+                    limit: 9,
+                    sort: sort,
+                })
+                if (activeMood) params.append('mood', activeMood)
+                if (debouncedQuery) params.append('query', debouncedQuery)
+
+                const url = `/api/posts/?${params.toString()}`
                 const res = await fetch(url)
                 if (!res.ok) throw new Error('Failed to fetch')
                 const data = await res.json()
                 setPosts(data.postFetched || [])
+                if (data.pagination) {
+                    setTotalPages(data.pagination.totalPages)
+                    setTotalPosts(data.pagination.totalPosts)
+                }
             } catch {
                 setError('Failed to load posts or the server is unavailable.')
             } finally {
@@ -85,35 +106,11 @@ export default function Home() {
             }
         }
         fetchPosts()
-    }, [activeMood])
+    }, [currentPage, sort, activeMood, debouncedQuery])
 
     function handleMoodFilter(moodId) {
-        setLoading(true)
         setActiveMood(prev => prev === moodId ? '' : moodId)
     }
-
-    const filteredPosts = useMemo(() => {
-        let list = [...posts]
-        if (query.trim()) {
-            const q = query.toLowerCase()
-            list = list.filter(p =>
-                p.title?.toLowerCase().includes(q) ||
-                p.content?.toLowerCase().includes(q) ||
-                p.author?.username?.toLowerCase().includes(q)
-            )
-        }
-        if (sort === 'newest')    list.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-        if (sort === 'oldest')    list.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-        if (sort === 'mostLiked') list.sort((a, b) => (b.likes?.length ?? 0) - (a.likes?.length ?? 0))
-        return list
-    }, [posts, query, sort])
-
-    const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE)
-    
-    const paginatedPosts = useMemo(() => {
-        const startIndex = (currentPage - 1) * POSTS_PER_PAGE
-        return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE)
-    }, [filteredPosts, currentPage])
 
     /* helper: get mood config */
     function getMoodConfig(mood) {
@@ -216,7 +213,7 @@ export default function Home() {
                     <p>Try a different mood or clear the filter.</p>
                     <button className="btn btn-outline" onClick={() => { setLoading(true); setActiveMood('') }}>Clear Filter</button>
                 </div>
-            ) : filteredPosts.length === 0 ? (
+            ) : posts.length === 0 && debouncedQuery ? (
                 <div className="empty-state">
                     <span className="empty-state-icon">🔍</span>
                     <h3>No results for "{query}"</h3>
@@ -226,13 +223,13 @@ export default function Home() {
             ) : (
                 <>
                     {/* Result count when searching */}
-                    {query && (
+                    {debouncedQuery && (
                         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem', color: 'var(--text-faint)', marginBottom: '1.25rem', textAlign: 'center' }}>
-                            {filteredPosts.length} result{filteredPosts.length !== 1 ? 's' : ''} for "{query}"
+                            {totalPosts} result{totalPosts !== 1 ? 's' : ''} for "{debouncedQuery}"
                         </p>
                     )}
                     <div className="grid">
-                        {paginatedPosts.map((post) => {
+                        {posts.map((post) => {
                             const moodCfg = getMoodConfig(post.mood)
                             return (
                                 <Link to={`/post/${post._id}`} key={post._id} style={{ textDecoration: 'none' }}>

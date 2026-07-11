@@ -7,10 +7,11 @@ const { analyzeSentiment } = require('../services/sentimentService');
 const { generateSummary } = require('../services/summaryService');
 
 // ── GET all posts (with optional ?mood=<label> filter) ──
+// ── GET all posts (with pagination, search, filter, sort) ──
 router.get('/', async (req,res)=>{
     try{
         const filter = {};
-        const { mood } = req.query;
+        const { mood, query, sort, page = 1, limit = 9 } = req.query;
 
         // Validate and apply mood filter
         const validMoods = ['Uplifting', 'Thoughtful', 'Neutral', 'Raw', 'Fiery'];
@@ -19,10 +20,67 @@ router.get('/', async (req,res)=>{
             console.log(`[Posts] Filtering by mood: ${mood}`);
         }
 
-        const postFetched = await Post.find(filter).populate('author','name username profile_pic');
-        res.status(200).json({message:"Posts fetched successfully.", postFetched})
+        // Apply text search on title or content
+        if (query) {
+            filter.$or = [
+                { title: { $regex: query, $options: 'i' } },
+                { content: { $regex: query, $options: 'i' } }
+            ];
+        }
+
+        let sortOption = { createdAt: -1 }; // newest
+        if (sort === 'oldest') sortOption = { createdAt: 1 };
+
+        const pageNum = parseInt(page, 10) || 1;
+        const limitNum = parseInt(limit, 10) || 9;
+        const skip = (pageNum - 1) * limitNum;
+
+        let postFetched;
+        let totalPosts;
+
+        if (sort === 'mostLiked') {
+            // Aggregation pipeline to sort by size of likes array
+            const pipeline = [
+                { $match: filter },
+                { $addFields: { likesCount: { $size: { $ifNull: ["$likes", []] } } } },
+                { $sort: { likesCount: -1, createdAt: -1 } },
+                { $skip: skip },
+                { $limit: limitNum },
+                { $lookup: { from: 'users', localField: 'author', foreignField: '_id', as: 'author' } },
+                { $unwind: '$author' },
+                { $project: { 'author.password': 0, 'author.email': 0 } } // Exclude sensitive info
+            ];
+            postFetched = await Post.aggregate(pipeline);
+            
+            // Get total count for pagination
+            const countResult = await Post.aggregate([ { $match: filter }, { $count: "total" } ]);
+            totalPosts = countResult.length > 0 ? countResult[0].total : 0;
+        } else {
+            // Standard mongoose query
+            postFetched = await Post.find(filter)
+                .populate('author', 'name username profile_pic')
+                .sort(sortOption)
+                .skip(skip)
+                .limit(limitNum);
+                
+            totalPosts = await Post.countDocuments(filter);
+        }
+
+        const totalPages = Math.ceil(totalPosts / limitNum);
+
+        res.status(200).json({
+            message: "Posts fetched successfully.", 
+            postFetched,
+            pagination: {
+                totalPosts,
+                totalPages,
+                currentPage: pageNum,
+                limit: limitNum
+            }
+        });
     }
     catch(error){
+        console.error(error);
         res.status(500).json({message:"Server error"});
     }
 })
